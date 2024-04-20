@@ -1,0 +1,690 @@
+
+/* body and general */
+body {
+    margin: 0px;
+}
+
+.text_align_center {
+    text-align: center;
+}
+.text_align_justify {
+    text-align: justify;
+}
+
+.horizontal_list {
+    list-style-type: none;
+    margin: 0px;
+}
+
+.margin_bottom_5rem {
+    margin-bottom: 5rem;
+}
+
+.margin_bottom_3rem {
+    margin-bottom: 3rem;
+}
+.margin_bottom_10rem {
+    margin-bottom: 10rem;
+}
+
+.display_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zero_padding_ul {
+    padding: 0px;
+}
+
+/* header section  */
+#body_header {
+    height: auto;
+    background-image: url(static/header-bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.8;
+    filter: grayscale(0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* header - navigation section */
+#navigation {
+    padding-top: 2%;
+}
+
+.nav_item  {
+    display: inline-block;
+    padding: 1% 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1.5px black;
+}
+
+.nav_item a:hover {
+    color: rgba(230,196,196, 0.5);
+    border-bottom: 2px solid grey;
+}
+
+
+/* header - Name  */
+#my_name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 7%;
+    color: white;
+    text-shadow: 2px 2px gray;
+    padding: 0px 5%;
+    /* width: 90%; */
+}
+
+/* header - social links */
+#social_ul li {
+    display: inline-block;
+    padding: 2%;
+}
+
+#social_ul li a i {
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+#social_ul li a i:hover {
+    box-shadow: 0px 0px 15px 15px rgba(230,196,196,0.3);
+}
+
+#mobile_bars {
+    display: none;
+}
+
+/* header media queries  */
+@media screen and (max-width: 572px) {
+    #navigation {
+        display: none;
+    }
+    #mobile_bars {
+        display: block;
+        color: white;
+        font-size: 2rem;
+        padding: 2% 2% 0% 0%;
+        text-align: end;
+    }
+
+}
+
+/* Sections */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+section:nth-child(2n+1) {
+    background-color: rgb(211,211,211,0.3);
+}
+
+.section_heading {
+    /* color: darkgray; */
+    /* text-shadow: 0.1rem 0.1rem white; */
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Main - About Section */
+
+/* profile pic  */
+#profile_pic {
+    position: relative;
+    margin-top: -120px;
+    margin-bottom: 4%;
+}
+
+#profile_pic img {
+    height: 250px;
+    width: 250px;
+    box-shadow: 0px 0px 5px 5px white;
+    border-radius: 50%;
+}
+
+/* main - about - description myself  */
+#myself {
+    font-family: fantasy;
+    padding: 0px 20%;
+    font-size: 1.3rem;
+    text-align: justify;
+    font-weight: 550;
+    color: lightslategray;
+    /* text-shadow: 0.5px 0.5px black; */
+    /* margin-bottom: 4%; */
+}
+
+/* main - skill section  */
+
+#skill_list_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    gap: 3rem;
+}
+
+.skill_common_div {
+    width: 15rem;
+    height: 1.5rem;
+    background-color: rgb(183, 176, 176);
+    /* border: 1px solid white; */
+    border-radius: 0rem 1.5rem 0rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0px 5px 8px 2px grey;
+}
+
+.skill_item_heading {
+    font-family: cursive;
+    padding-left: 1rem;
+}
+
+.skill_progress {
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 1.5rem;
+    font-size: 1.1rem;
+}
+
+#html div.skill_progress {
+    width: 75%;
+    height: 100%;
+    background-color: turquoise;
+}
+#css div.skill_progress {
+    width: 65%;
+    height: 100%;
+    background-color: lightcoral;
+}
+#bootstrap div.skill_progress {
+    width: 80%;
+    height: 100%;
+    background-color: pink;
+}
+#javascript div.skill_progress {
+    width: 60%;
+    height: 100%;
+    background-color: violet;
+}
+#nodejs div.skill_progress {
+    width: 70%;
+    height: 100%;
+    background-color: greenyellow;
+}
+#react div.skill_progress {
+    width: 55%;
+    height: 100%;
+    background-color: palegreen;
+}
+#Java div.skill_progress {
+    width: 75%;
+    height: 100%;
+    background-color: lawngreen;
+}
+#DSA div.skill_progress {
+    width: 60%;
+    height: 100%;
+    background-color: gold;
+}
+
+/* Portfolio Section  */
+
+.pf_main_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.projects_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.project_img a img {
+    width: 100%;
+    height: 100%;
+}
+
+.common_card {
+    width: 12rem;
+    height: 10rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.1rem 0.2rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.project_detail {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    font-weight: 550;
+    text-shadow: 0.05rem 0.05rem black;
+    opacity: 0;
+    background-color: rgba(211, 211, 211, 0.8);
+}
+
+.project_detail:hover {
+    opacity: 1;
+}
+
+/* Contact section  */
+
+#contact {
+    color: white;
+    background: linear-gradient(to right,#2857a4, #403066);
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+
+.contact_main {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+#message_form {
+    width: 45%;
+}
+
+#contact_form li {
+    padding: 1rem;
+}
+
+#contact_form input, textarea{
+    width: 90%;
+    border: 0px solid;
+    background-color: inherit;
+    border-bottom: 0.1rem solid white;
+}
+
+#contact_form button {
+    border: 0.2rem solid white;
+    background-color: inherit;
+    color: white; 
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    margin: auto;
+}
+
+#address {
+    width: 45%;
+}
+
+#getInTouch h2 {
+    margin-top: 0px;
+}
+
+.contact_social {
+    width: 90%;
+}
+
+#myAddress div div {
+    padding-bottom: 1rem;
+}
+
+/* Work Experience */
+.display_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#experience {
+    flex-direction: column;
+    /* border: 1px solid; */
+}
+
+#exp_main_container {
+    position: relative;
+    /* border: 1px solid red; */
+    width: 80%;
+}
+
+#education_main_container {
+    position: relative;
+    /* border: 1px solid red; */
+    width: 80%;
+} 
+
+.edu_exp_common {
+    /* background-color: blue; */
+    align-items: flex-end;
+    flex-direction: column;
+    width: 40%;
+    /* border: 1px dashed; */
+    position: relative;
+}
+
+.edu_exp_common:nth-child(2n){
+    left: 60%;
+}
+
+/* .edu_exp_common:nth-child(2n)::after{
+    position: absolute;
+    top: 30%;
+    left: -27%;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background-color: gray;
+    border-radius: 50%;
+    z-index: 1;
+}
+.edu_exp_common:nth-child(2n+1)::after{
+    position: absolute;
+    top: 30%;
+    left: 123%;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background-color: gray;
+    border-radius: 50%;
+    z-index: 1;
+} */
+
+.institute {
+    /* border: 1px solid; */
+    width: 95%;
+}
+
+.institute_detail {
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    text-align: end;
+}
+
+.edu_exp_detail {
+    text-align: justify;
+}
+
+.timeline {
+    position: absolute;
+    width: 0;
+    height: 65%;
+    border: 2px dashed green;
+    top: 10%;
+    left: 50%;
+}
+
+.markers_edu_exp {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+#marker1 {
+    top: 10%;
+    left: 49%;
+}
+
+#marker2 {
+    top: 43%;
+    left: 49%;
+}
+#marker3 {
+    top: 75%;
+    left: 49%;
+}
+
+.plane {
+    font-size: large;
+    position: sticky;
+    top: 10%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+#degree_designation {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 550;
+}
+
+#institute_name {
+    font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+    font-size: 1rem;
+}
+
+#tenure {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.edu_exp_detail {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+
+@media screen and (max-width: 769px) {
+    
+    
+    /* experience */
+    .timeline {
+        left: 11%;
+    }
+    #marker1 {
+        top: 10%;
+        left: 10%;
+    }
+    
+    #marker2 {
+        top: 43%;
+        left: 10%;
+    }
+    #marker3 {
+        top: 75%;
+        left: 10%;
+    }
+    .edu_exp_common{
+        left: 25% !important;
+        width: 65%;
+    }
+
+    /* contact */
+    #message_form {
+        width: 80%;
+    }
+
+    #address {
+        width: 70%
+    }
+
+}
+
+@media screen and (max-width: 572px) {
+
+    /* experience */
+    .timeline {
+        left: 9.6%;
+    }
+    #marker1 {
+        top: 10%;
+        left: 8%;
+    }
+    
+    #marker2 {
+        top: 43%;
+        left: 8%;
+    }
+    #marker3 {
+        top: 75%;
+        left: 8%;
+    }
+    .edu_exp_common{
+        left: 25% !important;
+        width: 70%;
+    }
+
+    /* contact */
+    #message_form {
+        width: 80%;
+    }
+
+    #address {
+        width: 70%
+    }
+}
+
+
+
+/* education section  */
+
+/* .markers_edu_exp {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+#education_main_container {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.education_commonbox {
+    height: auto;
+    width: 20rem;
+}
+
+#graduation{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#twelft_std {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+#tenth_std {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+#timeline {
+    grid-row: 1/4;
+    grid-column: 2/3;
+    height: 70%;
+    width: 0.1rem;
+    border-right: 0.2rem dashed green;
+}
+
+#ed_mark1 {
+    
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+#ed_mark2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+#ed_mark3 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.edu_exp_common {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.8rem;
+}
+
+.institute {
+    justify-content: space-between;
+    gap: 3rem;
+    width: 95%;
+}
+
+.institute_detail {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.edu_exp_detail {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+#degree_designation {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 550;
+}
+
+#institute_name {
+    font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+    font-size: 1rem;
+}
+
+#tenure {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    color: gray;
+} */
+
+
+
+
+
+
+
+
+
+
+
